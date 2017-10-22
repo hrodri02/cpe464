@@ -1,0 +1,51 @@
+19:22:03.966700 join response received.
+19:22:03.966729 Neighbor update received.
+19:22:03.966747 fish: Neighbor list 
+19:22:03.966762 udp 0.0.0.0:0, loss 0.000000
+19:22:03.966786 udp 0.0.0.0:0, loss 0.000000
+19:22:03.966800 udp 0.0.0.0:0, loss 0.000000
+19:22:03.966814 udp 0.0.0.0:0, loss 0.000000
+19:22:03.966827 udp 0.0.0.0:0, loss 0.000000
+19:22:03.966841 udp 0.0.0.0:0, loss 0.000000
+19:22:03.966887 fish: in main
+19:22:03.966909 Refreshing neighbor list
+19:22:03.966964 calling fish_debugframe
+:
+	L2: 32 bytes from F-00:00:00:03:00:00 to F-FF:FF:FF:FF:FF:FF
+		checksum D4FE (Valid)
+	L3: neigh from F-0.0.0.3 to F-255.255.255.255 (ttl=1,pktid=00000001)
+	L4: Neighbor Discovery Request
+19:22:03.976990 Broadcasting route table
+19:22:03.977050 calling fish_debugframe
+:
+	L2: 32 bytes from F-00:00:00:03:00:00 to F-FF:FF:FF:FF:FF:FF
+		checksum D0FE (Valid)
+	L3: rout_dv from F-0.0.0.3 to F-255.255.255.255 (ttl=1,pktid=00000002)
+	L4: 0 distance-vector advertisements
+19:22:14.037789 Neighbor update received.
+19:22:14.039018 calling fish_debugframe
+:
+	L2: 32 bytes from F-00:00:00:04:00:00 to F-FF:FF:FF:FF:FF:FF
+		checksum D2FE (Valid)
+	L3: neigh from F-0.0.0.4 to F-255.255.255.255 (ttl=1,pktid=00000001)
+	L4: Neighbor Discovery Request
+19:22:14.039126 Processing neighbor protocol packet:
+	L3: neigh from F-0.0.0.4 to F-255.255.255.255 (ttl=1,pktid=00000001)
+	L4: Neighbor Discovery Request
+19:22:14.039164 Packet has invalid length (8176), should be 16.  Ignoring.
+19:22:14.050162 calling fish_debugframe
+:
+	L2: 32 bytes from F-00:00:00:04:00:00 to F-FF:FF:FF:FF:FF:FF
+		checksum CEFE (Valid)
+	L3: rout_dv from F-0.0.0.4 to F-255.255.255.255 (ttl=1,pktid=00000002)
+	L4: 0 distance-vector advertisements
+19:22:14.050236 New DV route to destination F-0.0.0.4/32 via neighbor F-0.0.0.4, length 1
+19:22:33.986979 Refreshing neighbor list
+19:22:33.987112 Broadcasting route table
+19:22:33.987144 Error with frame passed to fishnet: Frame with length > MTU
+19:22:33.987158 Frame::
+	L2: 11264 bytes from F-00:00:00:03:00:00 to F-FF:FF:FF:FF:FF:FF
+		checksum 6D36 (Valid)
+	L3: arp from F-0.0.0.3 to F-255.255.255.255 (ttl=1,pktid=05000000)
+	L4: ARP bad query type 16777216
+** Aborting due to error in transmitted frame.  Set debug level to FISH_DEBUG_ALL to see details about the error **, aborting.
